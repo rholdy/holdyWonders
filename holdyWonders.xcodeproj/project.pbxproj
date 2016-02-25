@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CAFA5221C6ADA0F00FF4B42 /* WonderDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAFA5211C6ADA0F00FF4B42 /* WonderDetailVC.swift */; };
 		4CF603B41C62EE0C007EF1A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF603B31C62EE0C007EF1A0 /* AppDelegate.swift */; };
 		4CF603B61C62EE0C007EF1A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF603B51C62EE0C007EF1A0 /* ViewController.swift */; };
 		4CF603B91C62EE0C007EF1A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF603B71C62EE0C007EF1A0 /* Main.storyboard */; };
 		4CF603BB1C62EE0C007EF1A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF603BA1C62EE0C007EF1A0 /* Assets.xcassets */; };
 		4CF603BE1C62EE0C007EF1A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF603BC1C62EE0C007EF1A0 /* LaunchScreen.storyboard */; };
+		4CF603CA1C62F775007EF1A0 /* Wonder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF603C91C62F775007EF1A0 /* Wonder.swift */; };
+		4CF603CE1C630404007EF1A0 /* WonderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF603CD1C630404007EF1A0 /* WonderCell.swift */; };
+		4CF6E4E31C766FA500C2C29C /* peanutHoldy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CF6E4E21C766FA500C2C29C /* peanutHoldy.jpg */; };
+		4CF6E4E51C766FB200C2C29C /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF6E4E41C766FB200C2C29C /* back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CAFA5211C6ADA0F00FF4B42 /* WonderDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WonderDetailVC.swift; sourceTree = "<group>"; };
 		4CF603B01C62EE0C007EF1A0 /* holdyWonders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = holdyWonders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF603B31C62EE0C007EF1A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CF603B51C62EE0C007EF1A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		4CF603BA1C62EE0C007EF1A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CF603BD1C62EE0C007EF1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CF603BF1C62EE0C007EF1A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF603C91C62F775007EF1A0 /* Wonder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wonder.swift; sourceTree = "<group>"; };
+		4CF603CD1C630404007EF1A0 /* WonderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WonderCell.swift; sourceTree = "<group>"; };
+		4CF6E4E21C766FA500C2C29C /* peanutHoldy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = peanutHoldy.jpg; path = Assets.xcassets/peanutHoldy.jpg; sourceTree = "<group>"; };
+		4CF6E4E41C766FB200C2C29C /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Assets.xcassets/back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,43 @@
 		4CF603B21C62EE0C007EF1A0 /* holdyWonders */ = {
 			isa = PBXGroup;
 			children = (
-				4CF603B31C62EE0C007EF1A0 /* AppDelegate.swift */,
-				4CF603B51C62EE0C007EF1A0 /* ViewController.swift */,
+				4CF603C51C62EE4C007EF1A0 /* Models */,
+				4CF603C71C62EE61007EF1A0 /* Views */,
+				4CF603C81C62EE6A007EF1A0 /* Controllers */,
 				4CF603B71C62EE0C007EF1A0 /* Main.storyboard */,
+				4CF603B31C62EE0C007EF1A0 /* AppDelegate.swift */,
 				4CF603BA1C62EE0C007EF1A0 /* Assets.xcassets */,
 				4CF603BC1C62EE0C007EF1A0 /* LaunchScreen.storyboard */,
+				4CF6E4E41C766FB200C2C29C /* back.png */,
+				4CF6E4E21C766FA500C2C29C /* peanutHoldy.jpg */,
 				4CF603BF1C62EE0C007EF1A0 /* Info.plist */,
 			);
 			path = holdyWonders;
+			sourceTree = "<group>";
+		};
+		4CF603C51C62EE4C007EF1A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CF603C91C62F775007EF1A0 /* Wonder.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4CF603C71C62EE61007EF1A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CF603CD1C630404007EF1A0 /* WonderCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4CF603C81C62EE6A007EF1A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CF603B51C62EE0C007EF1A0 /* ViewController.swift */,
+				4CAFA5211C6ADA0F00FF4B42 /* WonderDetailVC.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF603BE1C62EE0C007EF1A0 /* LaunchScreen.storyboard in Resources */,
+				4CF6E4E31C766FA500C2C29C /* peanutHoldy.jpg in Resources */,
 				4CF603BB1C62EE0C007EF1A0 /* Assets.xcassets in Resources */,
 				4CF603B91C62EE0C007EF1A0 /* Main.storyboard in Resources */,
+				4CF6E4E51C766FB200C2C29C /* back.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF603B61C62EE0C007EF1A0 /* ViewController.swift in Sources */,
+				4CAFA5221C6ADA0F00FF4B42 /* WonderDetailVC.swift in Sources */,
+				4CF603CA1C62F775007EF1A0 /* Wonder.swift in Sources */,
+				4CF603CE1C630404007EF1A0 /* WonderCell.swift in Sources */,
 				4CF603B41C62EE0C007EF1A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,10 +291,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = holdyWonders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rholdy.holdyWonders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -258,10 +304,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = holdyWonders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rholdy.holdyWonders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -284,6 +332,7 @@
 				4CF603C41C62EE0C007EF1A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
